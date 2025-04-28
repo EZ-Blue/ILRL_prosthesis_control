@@ -150,28 +150,30 @@
     <!--/ Abstract. -->
 
     <!-- Methodology. -->
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Methodology</h2>
+        <h2 class="title is-3 has-text-centered">Methodology</h2>
+        
         <img src="static/images/IL_framework.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;">
         <div class="content has-text-justified">
           <p>
             Our objective is to develop and evaluate an ankle prosthesis with one degree of freedom, utilizing reinforcement learning and imitation learning techniques to enable stable locomotion in the humanoid agent.          
           </p>
         </div>
+        
         <img src="static/images/IL_rollout_diagram.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;">
         <div class="content has-text-justified">
           <p>
-            For imitation learning, we implement a two-agent system, where a VAIL agent is trained first using an expert dataset to teach the model how to walk, while a separate MLP-based agent manages control of the ankle-level assistive device. The MLP-based agent takes the observation space of the humanoid body’s joint positions and velocities as input, and outputs a single action that represents the ankle assistive device’s actuation. The MLP-based agent learns through behavior cloning by trying to minimize the error between its output action and the actual action of the expert VAIL agent given a specific observation state.
+            For imitation learning, we implement a two-agent system, where a VAIL agent is trained first using an expert dataset to teach the model how to walk, while a separate MLP-based agent manages control of the ankle-level assistive device. The MLP-based agent takes the observation space of the humanoid body's joint positions and velocities as input, and outputs a single action that represents the ankle assistive device's actuation. The MLP-based agent learns through behavior cloning by trying to minimize the error between its output action and the actual action of the expert VAIL agent given a specific observation state.
           </p>
         </div>
-      </div>
-      <img src="static/images/RL_framework.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;">
-      <div class="content has-text-justified">
-        <p>
-          For reinforcement learning, we use the same approach as the imitation learning framework, except we replace the MLP-based agent with a Proximal Policy Optimization (PPO) algorithm model that takes the same observation state input and outputs an ankle prosthetic action. The PPO model tries to maximize its rewards from our provided reward function, and this leads to successful ankle action outputs and subsequent walking behavior from our humanoid prosthesis model.        
-        </p>
-      </div>
+        
+        <img src="static/images/RL_framework.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;">
+        <div class="content has-text-justified">
+          <p>
+            For reinforcement learning, we use the same approach as the imitation learning framework, except we replace the MLP-based agent with a Proximal Policy Optimization (PPO) algorithm model that takes the same observation state input and outputs an ankle prosthetic action. The PPO model tries to maximize its rewards from our provided reward function, and this leads to successful ankle action outputs and subsequent walking behavior from our humanoid prosthesis model.        
+          </p>
+        </div>
       </div>
     </div>
     <!--/ Methodology. -->
