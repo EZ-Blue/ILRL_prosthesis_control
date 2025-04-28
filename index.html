@@ -153,13 +153,30 @@
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3 has-text-centered">Methodology</h2>
-        
-        <img src="static/images/IL_framework.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;">
+
         <div class="content has-text-justified">
           <p>
             Our objective is to develop and evaluate an ankle prosthesis with one degree of freedom, utilizing reinforcement learning and imitation learning techniques to enable stable locomotion in the humanoid agent.          
           </p>
         </div>
+
+        <img src="static/images/humanoid_torque_walk.gif" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;">
+
+        <div class="content has-text-justified">
+          <p>
+            For our locomotion simulation, we use the Humanoid Torque model from LocoMuJoCo, specifically the model for the walking task (there is also one for running). LocoMuJoCo has pre-trained walking models, which we use as a baseline for comparison.
+          </p>
+        </div>
+
+        <img src="static/images/prosthesis diagram.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;">
+
+        <div class="content has-text-justified">
+          <p>
+            We altered the original humanoid model from LocoMuJoCo to implement a model with its lower right leg and foot replaced with a prosthesis, with physical parameters like inertia matching those of lower leg prosthetics we found in literature. The prosthesis model is the <a href=https://opensourceleg.org/>Open Source Leg (OSL)</a> model from University of Michigan.
+          </p>
+        </div>
+        
+        <img src="static/images/IL_framework.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;">
         
         <img src="static/images/IL_rollout_diagram.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;">
         <div class="content has-text-justified">
