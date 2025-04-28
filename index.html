@@ -191,6 +191,12 @@
             For reinforcement learning, we use the same approach as the imitation learning framework, except we replace the MLP-based agent with a Proximal Policy Optimization (PPO) algorithm model that takes the same observation state input and outputs an ankle prosthetic action. The PPO model tries to maximize its rewards from our provided reward function, and this leads to successful ankle action outputs and subsequent walking behavior from our humanoid prosthesis model.        
           </p>
         </div>
+
+        <div class="content has-text-justified">
+          <p>
+            We experimented with 3 different observation state inputs to the IL and RL models: 36 state, 22 state and 16 state. These observation states represent a portion of the whole humanoid body observation, and we gradually limited number of inputs to mimic the limited sensor input of assistive devices in real applications, where there are typically only sensor inputs from the body parts and region near the assistive device itself. The diagrams, descriptions and LocoMuJoCo documentation for the 36, 22, and 16 observation states and their associated details can be found in the Appendix of this page.         
+          </p>
+        </div>
       </div>
     </div>
     <!--/ Methodology. -->
