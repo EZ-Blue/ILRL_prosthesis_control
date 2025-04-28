@@ -4,10 +4,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <meta charset="utf-8">
   <meta name="description"
-        content="Description of your research project">
-  <meta name="keywords" content="Keyword1, Keyword2, Keyword3">
+        content="Learning-Based Control of Transtibial Assistive Devices in Physics-Informed Locomotion Simulations">
+  <meta name="keywords" content="Prosthetics, Exoskeletons, Reinforcement Learning, Imitation Learning, Locomotion">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Research Project Title</title>
+  <title>Learning-Based Control of Transtibial Assistive Devices in Physics-Informed Locomotion Simulations</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
@@ -49,37 +49,29 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Your Research Project Title</h1>
+          <h1 class="title is-1 publication-title">Learning-Based Control of Transtibial Assistive Devices in Physics-Informed Locomotion Simulations</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a>Author 1</a><sup>*</sup><sup>1</sup>,</span>
+              <a href="mailto:jintongh@andrew.cmu.edu">Jonathan (Jintong) He</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a>Author 2</a><sup>*</sup><sup>1</sup>,</span>
+              <a href="mailto:shawnakk@andrew.cmu.edu">Shawn Krishnan</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://author3-website.com/">Author 3</a><sup>*</sup><sup>1</sup>,
+              <a href="mailto:manuella@andrew.cmu.edu">Manuel Lancastre</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://author4-website.com/">Author 4</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://author5-website.com/">Author 5</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://author6-website.com/">Author 6</a><sup>2</sup>,
+              <a href="mailto:ericzhao@andrew.cmu.edu">Eric Zhao</a><sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Institution 1</span>
-            <span class="author-block"><sup>2</sup>Institution 2</span>
-            <span class="author-block"><sup>*</sup>Equal contributions</span>
+            <span class="author-block"><sup>1</sup>Mechanical Engineering, Carnegie Mellon University</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="./static/pdfs/your-paper.pdf"
+                <a href="./static/pdfs/transtibial_assistive_devices.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -88,7 +80,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/your-paper-id"
+                <a href="https://arxiv.org/abs/YOUR-PAPER-ID"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -98,7 +90,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/your-username/your-repo"
+                <a href="https://github.com/YOUR-USERNAME/YOUR-REPO"
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -126,7 +118,7 @@
             Your browser does not support the video tag.
           </video>
           <h2 class="subtitle has-text-centered">
-            <span class="dnerf"></span> Brief description of what your project does or achieves.
+            <span class="dnerf"></span> Our hybrid learning approach enables adaptable control of transtibial assistive devices across varied environments and user conditions.
         </div>
       </div>
     </div>
@@ -142,7 +134,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Your abstract text goes here. Describe your research problem, methodology, and results.
+            Individuals with lower extremity impairments often face significant mobility challenges, as current control strategies for transtibial prostheses and exoskeletons may not be adequately adapted to varied environments and user-specific needs. Traditional control methods, such as finite-state machines and impedance control, can be limited in their ability to handle the dynamic and complex nature of human locomotion. To address these limitations, our research explores the application of deep learning techniques to control transtibial prostheses and exoskeletons to improve mobility for individuals with lower extremity limitations. We propose a hybrid learning pipeline that integrates imitation learning (IL) and deep reinforcement learning (RL) to develop adaptive control policies for ankle assistive devices. Using the Mujoco physics engine and Loco-Mujoco framework, we implemented a two-agent system: a Variational Adversarial Imitation Learning (VAIL) agent that controls the humanoid body and a separate agent that manages control of the ankle-level assistive device. Additionally, we created a Proximal Policy Optimization (PPO) based reinforcement learning model that can replicate natural human locomotion. We achieved promising results by combining both approaches: first establishing baseline behavior through imitation learning, then fine-tuning with reinforcement learning to incorporate environmental adaptation. We also found that simpler multilayer perceptron actor-critic models outperformed more complex transformer architectures. This work demonstrates the potential of hybrid learning approaches for developing adaptable, user-compatible prosthetic controllers that can function effectively across diverse environments and user conditions.
           </p>
         </div>
       </div>
@@ -156,7 +148,7 @@
         <img src="./static/images/framework.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;">
         <div class="content has-text-justified">
           <p>
-            Brief description of your methodology or approach.
+            Our objective is to develop and evaluate an ankle prosthesis with one degree of freedom, utilizing reinforcement learning and imitation learning techniques to enable stable locomotion in the humanoid agent. We implement a two-agent system, where a VAIL agent is trained first using an expert dataset to teach the model how to walk, while a separate MLP-based agent manages control of the ankle-level assistive device. The integration of both approaches allows us to first establish baseline behavior through imitation learning, then fine-tune with reinforcement learning to incorporate environmental adaptation.
           </p>
         </div>
       </div>
@@ -186,66 +178,32 @@
   <div class="container is-max-desktop">
     <div class="has-text-centered">
     <h1 class="title is-3">Comparisons to Baselines</h1>
-      <h1 class="title is-4">Experiment Type 1</h1>
+      <h1 class="title is-4">Imitation Learning Results</h1>
       <div class="columns is-centered">
         <div class="column is-half">
-          <h2 class="title is-5">Ours (<span style="color: green;">&#10004;</span>)</h2>
+          <h2 class="title is-5">36-State MLP (<span style="color: green;">&#10004;</span>)</h2>
           <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/exp1_ours.mp4" type="video/mp4">
+            <source src="./static/videos/36state_mlp.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-half">
-          <h2 class="title is-5">Baseline 1 (<i class="fas fa-times" style="color: red;"></i>)</h2>
+          <h2 class="title is-5">22-State MLP (<span style="color: green;">&#10004;</span>)</h2>
           <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/exp1_baseline1.mp4" type="video/mp4">
+            <source src="./static/videos/22state_mlp.mp4" type="video/mp4">
           </video>
         </div>
       </div>
       <div class="columns is-centered">
         <div class="column is-half">
-          <h2 class="title is-5">Baseline 2 (<i class="fas fa-times" style="color: red;"></i>)</h2>
+          <h2 class="title is-5">22-State MLP (Prosthesis) (<span style="color: green;">&#10004;</span>)</h2>
           <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/exp1_baseline2.mp4" type="video/mp4">
+            <source src="./static/videos/22state_prosthesis.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-half">
-          <h2 class="title is-5">Baseline 3 (<i class="fas fa-times" style="color: red;"></i>)</h2>
+          <h2 class="title is-5">16-State MLP (<i class="fas fa-times" style="color: red;"></i>)</h2>
           <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/exp1_baseline3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br><br>
-  <div class="container is-max-desktop">
-    <div class="has-text-centered">
-      <h1 class="title is-4">Experiment Type 2</h1>
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <h2 class="title is-5">Ours (<span style="color: green;">&#10004;</span>)</h2>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/exp2_ours.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column is-half">
-          <h2 class="title is-5">Baseline 1 (<i class="fas fa-times" style="color: red;"></i>)</h2>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/exp2_baseline1.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <h2 class="title is-5">Baseline 2 (<i class="fas fa-times" style="color: red;"></i>)</h2>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/exp2_baseline2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column is-half">
-          <h2 class="title is-5">Baseline 3 (<i class="fas fa-times" style="color: red;"></i>)</h2>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/exp2_baseline3.mp4" type="video/mp4">
+            <source src="./static/videos/16state_mlp.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -254,32 +212,32 @@
   <br><br><br>
   <div class="container is-max-desktop">
     <div class="has-text-centered">
-      <h1 class="title is-4">Experiment Type 3</h1>
+      <h1 class="title is-4">Reinforcement Learning Results</h1>
       <div class="columns is-centered">
         <div class="column is-half">
-          <h2 class="title is-5">Ours (<span style="color: green;">&#10004;</span>)</h2>
+          <h2 class="title is-5">PPO Enhanced (<span style="color: green;">&#10004;</span>)</h2>
           <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/exp3_ours.mp4" type="video/mp4">
+            <source src="./static/videos/ppo_enhanced.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-half">
-          <h2 class="title is-5">Baseline 1 (<i class="fas fa-times" style="color: red;"></i>)</h2>
+          <h2 class="title is-5">Basic PPO (<i class="fas fa-times" style="color: red;"></i>)</h2>
           <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/exp3_baseline1.mp4" type="video/mp4">
+            <source src="./static/videos/basic_ppo.mp4" type="video/mp4">
           </video>
         </div>
       </div>
       <div class="columns is-centered">
         <div class="column is-half">
-          <h2 class="title is-5">Baseline 2 (<span style="color: green;">&#10004;</span>&#128337)</h2>
+          <h2 class="title is-5">Policy Gradient (<i class="fas fa-times" style="color: red;"></i>)</h2>
           <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/exp3_baseline2.mp4" type="video/mp4">
+            <source src="./static/videos/policy_gradient.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column is-half">
-          <h2 class="title is-5">Baseline 3 (<span style="color: green;">&#10004;</span>)</h2>
+          <h2 class="title is-5">Hybrid IL+RL Approach (<span style="color: green;">&#10004;</span>)</h2>
           <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/exp3_baseline3.mp4" type="video/mp4">
+            <source src="./static/videos/hybrid_approach.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -290,41 +248,19 @@
 <section class="section">  
   <div class="container is-max-desktop">
     <div class="has-text-centered">
-      <h1 class="title is-3">Ablation Study: Component 1</h1>
-      <h2 class="title is-4">With Component 1</h2>
+      <h1 class="title is-3">Analysis of Ankle Kinematics and Kinetics</h1>
+      <h2 class="title is-4">Ankle Joint Kinematics</h2>
       <div class="columns is-centered">
-        <div class="column is-third">
-          <h3 class="title is-5">Case 1 (<span style="color: green;">&#10004;</span>)</h3>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/with_comp1_case1.mp4" type="video/mp4">
-        </div>
-        <div class="column is-third">
-          <h3 class="title is-5">Case 2 (<span style="color: green;">&#10004;</span>)</h3>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/with_comp1_case2.mp4" type="video/mp4">
-        </div>
-        <div class="column is-third">
-          <h3 class="title is-5">Case 3 (<span style="color: green;">&#10004;</span>)</h3>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/with_comp1_case3.mp4" type="video/mp4">
+        <div class="column is-full">
+          <img src="./static/images/kinematics.png" alt="Ankle Joint Kinematics" style="width: 80%;">
+          <h3 class="title is-5">Mean joint angle trajectories (±1 standard deviation) across gait cycles</h3>
         </div>
       </div>
-      <h2 class="title is-4">Without Component 1</h2>
+      <h2 class="title is-4">Ankle Joint Kinetics</h2>
       <div class="columns is-centered">
-        <div class="column is-third">
-          <h3 class="title is-5">Case 1 (<i class="fas fa-times" style="color: red;"></i>)</h3>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/no_comp1_case1.mp4" type="video/mp4">
-        </div>
-        <div class="column is-third">
-          <h3 class="title is-5">Case 2 (<i class="fas fa-times" style="color: red;"></i>)</h3>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/no_comp1_case2.mp4" type="video/mp4">
-        </div>
-        <div class="column is-third">
-          <h3 class="title is-5">Case 3 (<i class="fas fa-times" style="color: red;"></i>)</h3>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/no_comp1_case3.mp4" type="video/mp4">
+        <div class="column is-full">
+          <img src="./static/images/kinetics.png" alt="Ankle Joint Kinetics" style="width: 80%;">
+          <h3 class="title is-5">Mean torque profiles (±1 standard deviation) across gait cycles</h3>
         </div>
       </div>
     </div>
@@ -334,59 +270,17 @@
 <section class="section"> 
   <div class="container is-max-desktop">
     <div class="has-text-centered">
-      <h1 class="title is-3">Ablation Study: Component 2</h1>
-      <div class="columns is-centered">
-        <div class="column is-third">
-          <h2 class="title is-5">With Component 2 (<span style="color: green;">&#10004;</span>)</h2>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/with_comp2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column is-third">
-          <h3 class="title is-5">Visualization</h3>
-          <img src="./static/images/visualization.png" alt="Visualization" style="width: 60%;">
-        </div>
-        <div class="column is-third">
-          <h2 class="title is-5">Without Component 2 (<i class="fas fa-times" style="color: red;"></i>)</h2>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/no_comp2.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section"> 
-  <div class="container is-max-desktop">
-    <div class="has-text-centered">
-      <h1 class="title is-3">Scalability Study</h1>
+      <h1 class="title is-3">Two-Agent System Implementation</h1>
       <div class="columns is-centered">
         <div class="column is-half">
-          <h2 class="title is-5">Configuration 1 (<i class="fas fa-times" style="color: red;"></i>)</h2>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/config1.mp4" type="video/mp4">
-          </video>
+          <h2 class="title is-5">Training System</h2>
+          <img src="./static/images/training_system.png" alt="Training System" style="width: 90%;">
+          <p>Flowchart illustrating the two-agent system used for training the humanoid model with an ankle prosthesis</p>
         </div>
         <div class="column is-half">
-          <h2 class="title is-5">Configuration 2 (<i class="fas fa-times" style="color: red;"></i>)</h2>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/config2.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <h2 class="title is-5">Configuration 3 (<span style="color: green;">&#10004;</span>)</h2>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/config3.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column is-half">
-          <h2 class="title is-5">Configuration 4 (<span style="color: green;">&#10004;</span>&#128337)</h2>
-          <video controls autoplay muted loop playsinline style="width: 100%;">
-            <source src="./static/videos/config4.mp4" type="video/mp4">
-          </video>
+          <h2 class="title is-5">Evaluation System</h2>
+          <img src="./static/images/evaluation_system.png" alt="Evaluation System" style="width: 90%;">
+          <p>Diagram showing the evaluation of the system, demonstrating the mapping from 36 state inputs into 12 action outputs</p>
         </div>
       </div>
     </div>
@@ -397,10 +291,10 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/pdfs/your-paper.pdf">
+         href="./static/pdfs/transtibial_assistive_devices.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/your-username/your-repo" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/YOUR-USERNAME/YOUR-REPO" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
