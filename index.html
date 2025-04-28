@@ -4,10 +4,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <meta charset="utf-8">
   <meta name="description"
-        content="Learning-Based Control of Transtibial Assistive Devices in Physics-Informed Locomotion Simulations">
-  <meta name="keywords" content="Prosthetics, Exoskeletons, Reinforcement Learning, Imitation Learning, Locomotion">
+        content="A Comparative Study of Imitation and Reinforcement Learning for Transtibial Prosthesis Control in Physics-Informed Locomotion Simulations">
+  <meta name="keywords" content="Prosthetics, Exoskeletons, Reinforcement Learning, Imitation Learning, Locomotion, Controls">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Learning-Based Control of Transtibial Assistive Devices in Physics-Informed Locomotion Simulations</title>
+  <title>A Comparative Study of Imitation and Reinforcement Learning for Transtibial Prosthesis Control in Physics-Informed Locomotion Simulations</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
@@ -52,33 +52,41 @@
           <h1 class="title is-1 publication-title">Learning-Based Control of Transtibial Assistive Devices in Physics-Informed Locomotion Simulations</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="mailto:jintongh@andrew.cmu.edu">Jonathan (Jintong) He</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="mailto:shawnakk@andrew.cmu.edu">Shawn Krishnan</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="mailto:manuella@andrew.cmu.edu">Manuel Lancastre</a><sup>1</sup>,
+              <a href="https://www.linkedin.com/in/jonathan-he-628493248/">Jonathan (Jintong) He</a><sup>1<sup>*</sup>,
             </span>
             <span class="author-block">
-              <a href="mailto:ericzhao@andrew.cmu.edu">Eric Zhao</a><sup>1</sup>
+              <a href="https://www.linkedin.com/in/shawnkrishnan/">Shawn Krishnan</a><sup>1<sup>*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/manuellancastre/">Manuel Lancastre</a><sup>1<sup>*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ez-blue.github.io/">Eric Zhao</a><sup>1<sup>*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://inseungkang.github.io/">Inseung Kang</a><sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Mechanical Engineering, Carnegie Mellon University</span>
           </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal Contributions</span>
+          </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="./static/pdfs/transtibial_assistive_devices.pdf"
+                <a href="static/pdfs/24782_Phase_2_Project_Report__IEEE_Conference_Template_ (2).pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
+              <!-- </span>
               <span class="link-block">
                 <a href="https://arxiv.org/abs/YOUR-PAPER-ID"
                    class="external-link button is-normal is-rounded is-dark">
@@ -87,10 +95,10 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/YOUR-USERNAME/YOUR-REPO"
+                <a href="https://github.com/JintongHe/AIE_Project_Team1"
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -145,7 +153,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Methodology</h2>
-        <img src="./static/images/framework.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;">
+        <img src="static/images/IL_framework.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;">
         <div class="content has-text-justified">
           <p>
             Our objective is to develop and evaluate an ankle prosthesis with one degree of freedom, utilizing reinforcement learning and imitation learning techniques to enable stable locomotion in the humanoid agent. We implement a two-agent system, where a VAIL agent is trained first using an expert dataset to teach the model how to walk, while a separate MLP-based agent manages control of the ankle-level assistive device. The integration of both approaches allows us to first establish baseline behavior through imitation learning, then fine-tune with reinforcement learning to incorporate environmental adaptation.
@@ -291,10 +299,10 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/pdfs/transtibial_assistive_devices.pdf">
+         href="static/pdfs/24782_Phase_2_Project_Report__IEEE_Conference_Template_ (2).pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/YOUR-USERNAME/YOUR-REPO" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/JintongHe/AIE_Project_Team1" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
